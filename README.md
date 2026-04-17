@@ -89,9 +89,9 @@ The emotion category order is defined in `EMOTION_NAMES` in `main_model/dataset.
 
 This experiment did **not** repartition the entire RAF-DB dataset. Instead, the following strategy was used:
 
-1. The official `train_labels.csv` was used as the full training pool.
+1. The official `train` was used as the full training pool.
 2. A stratified `9:1` split was performed within this training pool to obtain the training set and validation set.
-3. The official `test_labels.csv` was kept unchanged as the test set.
+3. The official `test` was kept unchanged as the test set.
 
 This logic is implemented in `main_model/dataset.py` through two functions:
 
